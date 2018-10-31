@@ -1,3 +1,3 @@
-defmodule FlashElmWeb.PageViewTest do
-  use FlashElmWeb.ConnCase, async: true
+defmodule PhoenixElmTemplateWeb.PageViewTest do
+  use PhoenixElmTemplateWeb.ConnCase, async: true
 end

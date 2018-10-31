@@ -1,4 +1,4 @@
-defmodule FlashElmWeb.ErrorHelpers do
+defmodule PhoenixElmTemplateWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -36,9 +36,9 @@ defmodule FlashElmWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(FlashElmWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(PhoenixElmTemplateWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(FlashElmWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(PhoenixElmTemplateWeb.Gettext, "errors", msg, opts)
     end
   end
 end

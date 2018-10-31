@@ -1,6 +1,6 @@
-defmodule FlashElm do
+defmodule PhoenixElmTemplate do
   @moduledoc """
-  FlashElm keeps the contexts that define your domain
+  PhoenixElmTemplate keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

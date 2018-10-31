@@ -1,5 +1,5 @@
-defmodule FlashElmWeb.Router do
-  use FlashElmWeb, :router
+defmodule PhoenixElmTemplateWeb.Router do
+  use PhoenixElmTemplateWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule FlashElmWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", FlashElmWeb do
+  scope "/", PhoenixElmTemplateWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", FlashElmWeb do
+  # scope "/api", PhoenixElmTemplateWeb do
   #   pipe_through :api
   # end
 end

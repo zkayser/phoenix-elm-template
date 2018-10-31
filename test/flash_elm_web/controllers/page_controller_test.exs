@@ -1,5 +1,5 @@
-defmodule FlashElmWeb.PageControllerTest do
-  use FlashElmWeb.ConnCase
+defmodule PhoenixElmTemplateWeb.PageControllerTest do
+  use PhoenixElmTemplateWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

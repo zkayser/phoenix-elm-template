@@ -1,12 +1,12 @@
-defmodule FlashElmWeb do
+defmodule PhoenixElmTemplateWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use FlashElmWeb, :controller
-      use FlashElmWeb, :view
+      use PhoenixElmTemplateWeb, :controller
+      use PhoenixElmTemplateWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,17 +19,17 @@ defmodule FlashElmWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: FlashElmWeb
+      use Phoenix.Controller, namespace: PhoenixElmTemplateWeb
+      alias PhoenixElmTemplateWeb.Router.Helpers, as: Routes
       import Plug.Conn
-      import FlashElmWeb.Router.Helpers
-      import FlashElmWeb.Gettext
+      import PhoenixElmTemplateWeb.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/flash_elm_web/templates",
-                        namespace: FlashElmWeb
+      use Phoenix.View, root: "lib/phoenix_elm_template_web/templates",
+                        namespace: PhoenixElmTemplateWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
@@ -37,9 +37,9 @@ defmodule FlashElmWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import FlashElmWeb.Router.Helpers
-      import FlashElmWeb.ErrorHelpers
-      import FlashElmWeb.Gettext
+      alias PhoenixElmTemplateWeb.Router.Helpers, as: Routes
+      import PhoenixElmTemplateWeb.ErrorHelpers
+      import PhoenixElmTemplateWeb.Gettext
     end
   end
 
@@ -54,7 +54,7 @@ defmodule FlashElmWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import FlashElmWeb.Gettext
+      import PhoenixElmTemplateWeb.Gettext
     end
   end
 

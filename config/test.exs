@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :flash_elm, FlashElmWeb.Endpoint,
+config :phoenix_elm_template, PhoenixElmTemplateWeb.Endpoint,
   http: [port: 4001],
   server: false
 

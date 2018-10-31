@@ -1,5 +1,5 @@
-defmodule FlashElmWeb.ErrorView do
-  use FlashElmWeb, :view
+defmodule PhoenixElmTemplateWeb.ErrorView do
+  use PhoenixElmTemplateWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.
