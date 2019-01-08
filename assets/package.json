@@ -2,7 +2,7 @@
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "deploy": "parcel build ./js/app.js --out-dir priv/static",
+    "deploy": "parcel build ./js/app.js ./css/app.css --out-dir priv/static",
     "watch": "parcel watch ./js/main.js ./css/app.css --out-dir priv/static"
   },
   "dependencies": {
