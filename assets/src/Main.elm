@@ -24,5 +24,5 @@ view model =
     [ button [ onClick Decrement, class "button" ] [ text "-" ]
     , div [] [ text (String.fromInt model) ]
     , button [ onClick Increment, class "button" ] [ text "+" ] 
-    , div [] [ text "And here is some more stuff from Elm!"]
+    , div [] [ text "And here is some more stuff from Elm! Yo!"]
     ]

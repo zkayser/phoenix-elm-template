@@ -12,12 +12,10 @@ config :phoenix_elm_template, PhoenixElmTemplateWeb.Endpoint,
   code_reloader: true,
   check_origin: false,
   watchers: [
-    node: [
-      "./assets/node_modules/parcel-bundler/bin/cli.js",
+    npm: [
+      "run",
       "watch",
-      "./assets/js/app.js",
-      "--out-dir",
-      "priv/static/js"
+      cd: Path.expand("../assets", __DIR__)
     ]
   ]
 
